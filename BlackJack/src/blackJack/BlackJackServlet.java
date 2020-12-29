@@ -33,7 +33,7 @@ public class BlackJackServlet extends HttpServlet {
 			num = Calc.execute(num);
 		}
 		session.setAttribute("number", num);
-		request.setAttribute("message", "ブラックジャックゲームへようこそ！！！");
+		request.setAttribute("message", "ブラックジャックゲームへようこそ");
 
 		ServletContext context = getServletContext();
 		RequestDispatcher dispatcher = context.getRequestDispatcher("/start.jsp");
